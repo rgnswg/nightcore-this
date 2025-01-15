@@ -1,0 +1,15 @@
+[package]
+name = "nightcore_this"
+authors = ["rgnswg 194875614+rgnswg@users.noreply.github.com"]
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+license = "MIT"
+
+[dependencies]
+eframe = "0.24.0"
+rfd = "0.12.0"
+rodio = "0.17.3"
+
+[package.metadata.wix]
+eula = false
