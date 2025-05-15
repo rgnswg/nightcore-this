@@ -29,7 +29,7 @@ sudo dnf install ffmpeg
 
 ### Windows
 1. Install FFmpeg 
-### Using [Scoop](https://scoop.sh) (recommended):
+#### Using [Scoop](https://scoop.sh) (recommended):
 ```powershell
 scoop install ffmpeg
 ```
