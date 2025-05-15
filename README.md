@@ -28,4 +28,10 @@ sudo dnf install ffmpeg
 2. Run the binary :D
 
 ### Windows
-- Windows installer coming soon ;)
+1. Install FFmpeg 
+### Using [Scoop](https://scoop.sh) (recommended):
+```powershell
+scoop install ffmpeg
+```
+2. Run the exe :D 
+

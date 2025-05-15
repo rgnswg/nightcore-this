@@ -6,10 +6,13 @@ use std::env;
 use std::path::PathBuf;
 
 fn get_ffmpeg_path() -> PathBuf {
-    #[cfg(windows)]
+     #[cfg(windows)]
     {
-        let ffmpeg_dir = env::var("FFMPEG_PATH").expect("FFMPEG_PATH not set");
-        PathBuf::from(ffmpeg_dir).join("ffmpeg.exe")
+        if let Ok(dir) = env::var("FFMPEG_PATH") {
+            PathBuf::from(dir).join("ffmpeg.exe")
+        } else {
+            PathBuf::from("ffmpeg.exe")
+        }
     }
     #[cfg(not(windows))]
     {
